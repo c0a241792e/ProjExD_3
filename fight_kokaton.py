@@ -164,6 +164,13 @@ class Score:
         self.img = self.fonto.render(f"score:{self.score}", 0, self.color)
         screen.blit(self.img, self.rct)
 
+# class Explosion:
+#     """
+#     爆発エフェクトを表示するためのクラス
+#     """
+#     def __init__(self)
+#         img = pg.image.load("fg/explosion.gif")
+#         self.img = 
 
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
