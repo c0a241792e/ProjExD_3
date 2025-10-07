@@ -154,14 +154,14 @@ class Score:
         self.img = self.fonto.render("表示させる文字列", 0, self.color)
         # self.img.set_colorkey((0, 0, 0))
         self.score = 0
-        self.rct = self.img.get_rect(center = (WIDTH - 100, HEIGHT - 50))
+        self.rct = self.img.get_rect(center = (WIDTH - 100, HEIGHT - 50))  # 画面右下付近に表示するための位置を設定
 
     def update(self, screen: pg.Surface):
         """
         画面左下に表示
         引数  screen：画面Surface
         """
-        self.img = self.fonto.render(f"score:{self.score}", 0, self.color)
+        self.img = self.fonto.render(f"score:{self.score}", 0, self.color)  # スコア数値をテキストに反映して出力
         screen.blit(self.img, self.rct)
 
 
